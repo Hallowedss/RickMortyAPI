@@ -1,0 +1,314 @@
+@import url("https://fonts.cdnfonts.com/css/star-wars");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+body {
+  background-image: url("./assets/background.png");
+  background-size: cover;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 70%;
+  height: auto;
+  margin-right: 5px;
+}
+
+.logo-text {
+  font-family: "Star Wars", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+.logo-text:hover {
+  color: rgb(0, 255, 94);
+}
+.page-planets {
+  color: #ffffff;
+}
+.social-media {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+i:hover {
+  color: rgb(0, 255, 94);
+}
+.planets-naves {
+  font-family: "Star Wars", sans-serif;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+}
+
+h2 {
+  font-family: "Star Wars", sans-serif;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 10px;
+  padding: 0 20px;
+}
+
+.cards {
+  width: 250px;
+  height: 370px;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+.cards:hover {
+  transform: scale(1.02);
+}
+
+.character-name-bg {
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.character-name {
+  font-family: "Star Wars", sans-serif;
+  color: rgb(0, 255, 94);
+  font-size: 1rem;
+}
+
+.buttons-character {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  left: 20%;
+}
+
+.button1 {
+  width: 70px;
+  height: 25px;
+  background-color: rgb(0, 255, 94);
+  color: black;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: #000;
+  color: rgb(0, 255, 94);
+}
+
+#back-button {
+  visibility: hidden;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin: 70px 0 20px 0;
+}
+
+.footer-logo {
+  font-family: "Star Wars", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.copy-right {
+  font-weight: 500;
+  color: #fff;
+}
+
+.modal {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+
+.modal-content {
+  width: 25vw;
+  height: 70vh;
+  background-color: #0d0d0d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 30px 10px;
+  align-items: center;
+}
+
+.character-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.planet-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+.planet-details {
+  font-family: "Star Wars", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(0, 255, 89);
+}
+.character-details {
+  font-family: "Star Wars", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(0, 255, 89);
+}
+
+#page-planets {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .planets-naves {
+    display: none;
+  }
+  .logo-text {
+    display: none;
+  }
+
+  .social-media {
+    display: none;
+  }
+  h2 {
+    background-size: cover;
+    font-size: 4vw;
+  }
+  .footer-logo {
+    position: relative;
+
+    font-size: 4vw;
+  }
+  .modal-content {
+    width: 280px;
+  }
+  .heading {
+    width: 400px;
+    font-size: 3vw;
+    text-align: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.menu-btn {
+  background: none;
+  border: none;
+  color: rgb(0, 255, 89);
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  margin-left: 10px;;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-family: "Star Wars", sans-serif;
+  background-color: rgb(0, 0, 0);
+
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+

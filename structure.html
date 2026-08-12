@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Rick and Morty</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/rickandmortyapi.6317cbb3-removebg-preview.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./structure.html">
+        <div class="logo">
+          <img class="logo-img" src="./assets/rick-morty-logo.png" />
+          <span class="logo-text">Characters</span>
+        </div>
+      </a>
+    
+      <nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navlinks">
+          <li>
+            <a href="https://www.instagram.com/kzf_caio/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100030584478898"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Hallowedss" target="_blank">Github</a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/caio-cabral-8b64bb27b/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-media">
+        <a href="https://www.instagram.com/caioskts/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100030584478898"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/Hallowedss" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/caio-cabral-73b945304/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <h2 id="heading" class="heading">
+        Conheca todos os personagens The Rick and Morty
+      </h2>
+
+      <div class="main-content" id="main-content"></div>
+
+      <div class="modal" id="modal" onclick="hideModal()">
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+    <div class="buttons-character">
+      <button class="button1" id="back-button" disabled>Anterior</button>
+      <button class="button1" id="next-button" disabled>Próxima</button>
+    </div>
+
+    <footer>
+      <p class="footer-logo">The Rick and Morty Characters</p>
+      <p class="copyright">Desenvolvido por &copy; Caio Cabral</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/2ebf540726.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script src="./episodio.js"></script>
+    <script src="./menubuttom.js"></script>
+  </body>
+</html>
